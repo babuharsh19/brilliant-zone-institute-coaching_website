@@ -1,0 +1,270 @@
+{% extends "index.html" %}
+{% block body %}
+{% block header %}
+<div class="collapse navbar-collapse" id="navigation">
+  <ul class="navbar-nav ml-auto text-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item {{active}}">
+      <a class="nav-link" href="/courses">courses</a>
+    </li>
+    <!-- <li class="nav-item ">
+      <a class="nav-link" href="/notice">notice</a>
+    </li> -->
+    <li class="nav-item ">
+      <a class="nav-link" href="/refer">Refer and Earn</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/contact">CONTACT</a>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        JNV
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/jnvenglish">JNV english</a>
+        <a class="dropdown-item" href="/jnvhindi">JNV hindi</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Programming
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/webdev">Full stack web development</a>
+        <a class="dropdown-item" href="/cpythoncpp">C, C++, Python</a>
+        <a class="dropdown-item" href="/programmingjobready">Programming Job ready</a>
+        <a class="dropdown-item" href="/dsa">C, C++, DSA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  function showMessage() {
+      alert("Please login as admin to do this operation");
+  }
+</script>
+{% endblock %}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/courses">Our courses</a></li>
+          <li class="list-inline-item text-white h3 font-secondary "></li>
+        </ul>
+        <p class="text-lighten">Explore and join a course to grow and for a good future.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- courses -->
+<section class="section">
+  <div class="container">
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-1.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>01-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/jnvenglish">Class 6 admission
+          </a></li>
+        </ul>
+        <a href="/jnvenglish">
+          <h4 class="card-title">Jawahar Navodaya Vidyalaya Preparation - English medium
+          </h4>
+        </a>
+        <p class="card-text mb-4">It is a complete course to crack entry test for jawahar navodaya vidyalaya class 6 admissions</p>
+        <a href="/jnvenglish" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-2.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>01-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/jnvhindi">कक्षा 6 प्रवेश</a></li>
+        </ul>
+        <a href="/jnvhindi">
+          <h4 class="card-title">जवाहर नवोदय विद्यालय की तैयारी - हिंदी माध्यम</h4>
+        </a>
+        <p class="card-text mb-4"> यह जवाहर नवोदय विद्यालय कक्षा 6 प्रवेश के लिए प्रवेश परीक्षा को क्रैक करने का एक पूरा कोर्स है </p>
+        <a href="/jnvhindi" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-3.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>10-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/programmingjobready">Programming Combo Pack</a></li>
+        </ul>
+        <a href="/programmingjobready">
+          <h4 class="card-title">Programming Job Ready</h4>
+        </a>
+        <p class="card-text mb-4">It is a complete combo pack course of C,C++,Python,DSA,Web development and many more. This course is to make You Job ready in tech industry.</p>
+        <a href="/programmingjobready" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-1.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>25-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/webdev">Programming
+          </a></li>
+        </ul>
+        <a href="/webdev">
+          <h4 class="card-title">Full Stack Web Development
+          </h4>
+        </a>
+        <p class="card-text mb-4">This will be full stack development course in which you will learn html,css,javascript,flask,nodejs,expressjs,git,reactjs and many more technologies with 2-3 projects.</p>
+        <a href="/webdev" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-2.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>25-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/cpythoncpp">C, C++, Python</a></li>
+        </ul>
+        <a href="/cpythoncpp">
+          <h4 class="card-title">C, C++, Python Combo Pack</h4>
+        </a>
+        <p class="card-text mb-4"> It is a complete combo pack course of C,C++,Python. This course is to make You master in these programming languages.</p>
+        <a href="/cpythoncpp" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-3.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>25-04-2022</li>
+          <li class="list-inline-item"><a class="text-color" href="/dsa">C, C++, DSA</a></li>
+        </ul>
+        <a href="/dsa">
+          <h4 class="card-title">C, C++, DSA Combo Pack</h4>
+        </a>
+        <p class="card-text mb-4"> It is a complete combo pack course of C,C++,DSA. This course is to make You master in these technologies and make you job ready.</p>
+        <a href="/dsa" class="btn btn-primary btn-sm">See more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /course list -->
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-1.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>coming soon</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Networking
+          </a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Networking and Sales
+          </h4>
+        </a>
+        <p class="card-text mb-4">This will be course to provide you knowledge about sales and networking growth from basics to advanced.</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Not started yet</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-2.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>Coming soon</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Jee preparation</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">IIT JEE mains and advanced preparation</h4>
+        </a>
+        <p class="card-text mb-4"> It will cover complete syllabus of jee mains and advanced and will help you to prepare to crack jee</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Not started yet</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-3.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>Coming soon</li>
+          <li class="list-inline-item"><a class="text-color" href="#">neet</a></li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">Neet exam preparation</h4>
+        </a>
+        <p class="card-text mb-4"> It will cover complete syllabus Neet and will help to crack neet examination</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Not started yet</a>
+      </div>
+    </div>
+  </div>
+  <!-- {% for course in courses %}
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="{{ url_for('static',filename='images/courses/course-3.jpg') }}" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>{{course.startdate}}</li>
+          <li class="list-inline-item"><a class="text-color" href="#">{{course.title}}</a></li>
+        </ul>
+        <a href="#">
+          <h4 class="card-title">{{course.title}}</h4>
+        </a>
+        <p class="card-text mb-4"> {{course.content[0:25]}}</p>
+        <a href="#" class="btn btn-primary btn-sm">{{course.startdate}}</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %} -->
+  
+</div>
+<input type="button" id="btnShowMsg" value="Add New Course" onClick="showMessage()" />
+<input type="button" id="btnShowMsg" value="Edit Course" onClick="showMessage()" />
+<input type="button" id="btnShowMsg" value="Delete a course" onClick="showMessage()" />
+
+
+<!-- /course list -->
+  </div>
+</section>
+<!-- /courses -->
+
+<!-- footer -->
+{% endblock %}

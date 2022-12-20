@@ -1,0 +1,145 @@
+{% extends "index.html" %}
+{% block body %}
+{% block header %}
+<div class="collapse navbar-collapse" id="navigation">
+  <ul class="navbar-nav ml-auto text-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item {{active}}">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/courses">Courses</a>
+    </li>
+    <!-- <li class="nav-item ">
+      <a class="nav-link" href="/notice">Notice</a>
+    </li> -->
+    <li class="nav-item ">
+      <a class="nav-link" href="/refer">Refer and Earn</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/contact">CONTACT</a>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        JNV
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/jnvenglish">JNV english</a>
+        <a class="dropdown-item" href="/jnvhindi">JNV hindi</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Programming
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/webdev">Full stack web development</a>
+        <a class="dropdown-item" href="/cpythoncpp">C, C++, Python</a>
+        <a class="dropdown-item" href="/programmingjobready">Programming Job ready</a>
+        <a class="dropdown-item" href="/dsa">C, C++, DSA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/about">About Us</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some coachings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img class="img-fluid w-100 mb-4" src="{{ url_for('static',filename='images/about/about-page.jpg') }}" alt="about image">
+        <h2 class="section-title">ABOUT OUR JOURNY</h2>
+        <p>We are a group of students currently pursuing their graduation started Brilliant Zone Institute to provide high quality education to poor background students in low prices. Our mission is to provide education at minimal price as well as provide a platform to financial weak students to earn part time.
+
+        </p>
+        <p>I'm Ashish kumar pursuing my Bachelor of engineering started this institute with a great mission. i have completed my class 6th to class 12th from jawahar navodaya vidyalaya. After that i have prepared for jee and currently pursuing my graduation. Despite facing financial issues in my past life i thought about providing high quality education to the students who can't afford high prices of coachings which are running theire bussiness. so i have started this institute and continuously working to grow it. I live in Kaimganj , Pincode- 209502 , Distt- Farrukhabad , Uttar Pradesh , India and you can contact me through email  ashisharsh123456789@gmail.com or my contact number 8127613917. I also share regular videos on my youtube channel where you can visit through here <a href="https://www.youtube.com/c/AshisharshInstitute/featured">Brilliant zone institute youtube channel</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- funfacts -->
+<section class="section-sm bg-primary">
+  <div class="container">
+    <div class="row">
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="30">0</h2>
+          <h5 class="text-white">Students</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="15">0</h2>
+          <h5 class="text-white">Team members</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="5">0</h2>
+          <h5 class="text-white">Courses</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="2">0</h2>
+          <h5 class="text-white">Owners</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /funfacts -->
+
+<!-- success story -->
+<section class="section bg-cover" data-background="{{ url_for('static',filename='images/backgrounds/success-story.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-4 position-relative success-video">
+        <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
+          <i class="ti-control-play"></i>
+        </a>
+      </div>
+      <!-- <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">Success Stories</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- /success story -->
+
+<!-- teachers -->
+
+  <!-- /teachers -->
+
+<!-- footer -->
+{% endblock %}

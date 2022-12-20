@@ -1,0 +1,187 @@
+{% extends "index.html" %}
+{% block body %}
+{% block header %}
+<div class="collapse navbar-collapse" id="navigation">
+  <ul class="navbar-nav ml-auto text-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/courses">Courses</a>
+    </li>
+    <!-- <li class="nav-item ">
+      <a class="nav-link" href="/notice">Notice</a>
+    </li> -->
+    <li class="nav-item ">
+      <a class="nav-link" href="/refer">Refer and Earn</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/contact">CONTACT</a>
+    </li>
+    <li class="nav-item dropdown view {{active}}">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        JNV
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/jnvenglish">JNV english</a>
+        <a class="dropdown-item" href="/jnvhindi">JNV hindi</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Programming
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/webdev">Full stack web development</a>
+        <a class="dropdown-item" href="/cpythoncpp">C, C++, Python</a>
+        <a class="dropdown-item" href="/programmingjobready">Programming Job ready</a>
+        <a class="dropdown-item" href="/dsa">C, C++, DSA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">JNV class 6 preparation - English medium</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">
+            It is a complete course to crack entry test for jawahar navodaya vidyalaya class 6 admissions. Go through below pdf and learn more about the course.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- contact -->
+<section class="section bg-green">
+    
+  <div class="container">
+    <h2 style="color:red;">In this course you will
+      get </h2>
+
+<ul style="list-style-type:square">
+  <h3>
+  <li>Daily 1 hour Live Class</li>
+  <li>Daily 1 hour Doubt Class</li>
+  <li>Recorded Lectures</li>
+  <li>24 hours students whatsapp doubt solving support</li>
+  <li>A personal Coach</li>
+  <li>Weekly Tests</li>
+  <li>Every month student teacher and parents meeting</li>
+</h3>
+</ul><br><br>
+<h2 style="color:red;">Course Content :</h2><br>
+<ul style="list-style-type:square">
+  <h3>
+  <li style="color:blue;">Mental Abiliity Test : </li></h3>
+  <ul style="list-style-type:square">
+    <h4>
+    <li>Odd Man Out </li>
+    <li>Figure Matching</li>
+    <li>Pattern Completion</li>
+    <li>Figure Series Completion</li>
+    <li>Analogy</li>
+    <li>Geometrical Figure Completion</li>
+    <li>Mirror Image</li>
+    <li>Punched Hole Pattern</li>
+    <li>Space Visualisation</li>
+    <li>Embedded Figure</li>
+  </h4>
+  </ul>
+  <br><br>
+  <h3><li style="color:blue;">Airthmetic Test :</li></h3>
+  <ul style="list-style-type:square">
+    <h4>
+      <li>Number and number
+        system</li>
+      <li>four fundamental
+        operations on whole
+        numbers</li>
+      <li>fractional number and
+        fundamental operations</li>
+      <li>factors and multiples
+        including their properties</li>
+      <li>LCM and HCF of
+        numbers</li>
+      <li>decimal and
+        fundamental operations
+        on them</li>
+      <li>square square root
+        and cube cube root</li>
+      <li>measurement</li>
+      <li>approximation of
+        expressions</li>
+      <li>simplification of
+        numerical expressions</li>
+      <li>average</li>
+      <li>percentage and its
+        applications</li>
+      <li>profit loss and
+        discounts</li>
+      <li>simple interest</li>
+      <li>ratio and proportion</li>
+      <li>speed distance and
+        time</li>
+        <li>Pattern</li>
+      <li>area perimeter and
+        volume</li>
+      <li>data interpretation</li>
+  </h4>
+  </ul>
+  <br><br>
+  <h3><li style="color:blue;">Language Test :</li></h3>
+  <ul style="list-style-type:square">
+    <h4>
+      <li>synonym, antonym
+        and word meaning</li>
+      <li>comprehension</li>
+  </h4>
+  </ul>
+</ul><br>
+
+  </div>
+</section>
+
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="list-inline custom-breadcrumb">
+            <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">JNV class 6 Registration form </a></li>
+            <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+          </ul>
+          <p class="text-lighten">
+              Fill the form below to join this course.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-dar">
+      <center>
+    <div class="container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDA6R2wKd9EHBP-1gB_avHwiZLR_TvwceeF9ZfNjQbZD6M7Q/viewform?embedded=true" width="95%" height="1990" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</center>
+  </section>
+<!-- /contact -->
+
+<!-- gmap -->
+<!-- <section class="section pt-0">
+  <!-- Google Map -->
+  <!-- <div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+</section> --> -->
+<!-- /gmap -->
+
+<!-- footer -->
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "index.html" %}
+{% block body %}
+{% block header %}
+<div class="collapse navbar-collapse" id="navigation">
+  <ul class="navbar-nav ml-auto text-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/courses">Courses</a>
+    </li>
+    <!-- <li class="nav-item ">
+      <a class="nav-link" href="/notice">Notice</a>
+    </li> -->
+    <li class="nav-item ">
+      <a class="nav-link" href="/refer">Refer and Earn</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/contact">CONTACT</a>
+    </li>
+    <li class="nav-item dropdown view ">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        JNV
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/jnvenglish">JNV english</a>
+        <a class="dropdown-item" href="/jnvhindi">JNV hindi</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown view {{active}}">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Programming
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/webdev">Full stack web development</a>
+        <a class="dropdown-item" href="/cpythoncpp">C, C++, Python</a>
+        <a class="dropdown-item" href="/programmingjobready">Programming Job ready</a>
+        <a class="dropdown-item" href="/dsa">C, C++, DSA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Full Stack Web Development Course</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">
+            It is a complete course of Web development with multiple backend technologies. This course is to make You Job ready in tech industry.. Go through below details and learn more about the course.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- contact -->
+<section class="section bg-green">
+    <center>
+      <div class="container">
+        <img src="{{ url_for('static',filename='pdf/w1.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w2.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w3.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w4.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w5.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w6.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+        <img src="{{ url_for('static',filename='pdf/w7.png') }}" alt="Trulli" width="100%" height="500"><br><br>
+      </div>
+</center>
+</section>
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="list-inline custom-breadcrumb">
+            <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/webdev">Full Stack Web Development course Registration form </a></li>
+            <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+          </ul>
+          <p class="text-lighten">
+              Fill the form below to join this course.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-dar">
+      <center>
+    <div class="container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQmP72m9Dh0HBbhDknrVCaC1lMdrVzvO_hX4eszJ2mFi7KQw/viewform?embedded=true" width="95%" height="1857" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
+</center>
+  </section>
+<!-- /contact -->
+
+<!-- gmap -->
+<!-- <section class="section pt-0">
+  <!-- Google Map -->
+  <!-- <div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+</section> --> -->
+<!-- /gmap -->
+
+<!-- footer -->
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends "index.html" %}
+{% block body %}
+{% block header %}
+<div class="collapse navbar-collapse" id="navigation">
+  <ul class="navbar-nav ml-auto text-center">
+    <li class="nav-item ">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="/courses">Courses</a>
+    </li>
+    <!-- <li class="nav-item ">
+      <a class="nav-link" href="/notice">Notice</a>
+    </li> -->
+    <li class="nav-item ">
+      <a class="nav-link" href="/refer">Refer and Earn</a>
+    </li>
+    <li class="nav-item {{active}}">
+      <a class="nav-link" href="/contact">CONTACT</a>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        JNV
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/jnvenglish">JNV english</a>
+        <a class="dropdown-item" href="/jnvhindi">JNV hindi</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown view">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Programming
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="/webdev">Full stack web development</a>
+        <a class="dropdown-item" href="/cpythoncpp">C, C++, Python</a>
+        <a class="dropdown-item" href="/programmingjobready">Programming Job ready</a>
+        <a class="dropdown-item" href="/dsa">C, C++, DSA</a>
+      </div>
+    </li>
+  </ul>
+</div>
+{% endblock %}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='images/backgrounds/page-title.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/addcourse">add New course</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">Add course details here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- contact -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title">Course Details</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="/contact" method="post">
+          <input type="text" class="form-control mb-3" id="title" name="title" placeholder="Course title">
+          <input type="text" class="form-control mb-3" id="subheading" name="subheading" placeholder="Course Subheading">
+          <input type="text" class="form-control mb-3" id="form" name="form" placeholder="Course form link">
+          <input type="text" class="form-control mb-3" id="startdate" name="startdate" placeholder="Course Start Date">
+          <textarea name="content" id="content" class="form-control mb-3" placeholder="Course Details"></textarea>
+          <button type="submit" value="send" class="btn btn-primary">SUBMIT DETAILS</button>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <p class="mb-5">Add course here</p>
+        <a href="tel:+918127613917" class="text-color h5 d-block">+91 8127613917</a>
+        <a href="mailto:brilliantzoneinstitute@gmail.com" class="mb-5 text-color h5 d-block">brilliantzoneinstitute@gmail.com</a>
+        <p>Mudoul, Kaimganj<br>Farrukhabad, U.P India</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- gmap -->
+<!-- <section class="section pt-0">
+  <!-- Google Map -->
+  <!-- <div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+</section> --> -->
+<!-- /gmap -->
+
+<!-- footer -->
+{% endblock %}
